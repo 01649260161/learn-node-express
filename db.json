@@ -1,58 +1,16 @@
 {
   "users": [
     {
-      "name": "Lonh",
-      "id": "-xNu8VuKy"
-    },
-    {
-      "name": "Kien",
-      "id": "1Ku7PxRsf"
-    },
-    {
-      "name": "Hien",
-      "id": "FVN3m1L3A"
-    },
-    {
-      "name": "Ha",
-      "id": "bz5EazReV"
-    },
-    {
-      "name": "hehe",
-      "id": "u9XlMqZm0"
-    },
-    {
-      "name": "haha",
-      "id": "UB_HVESHu"
-    },
-    {
       "name": "M. Hiển",
       "phone": "123123123",
-      "id": "fFD75LHkE"
+      "id": "fFD75LHkE",
+      "email": "tranminhhien130398@gmail.com",
+      "password": "123456"
     },
     {
-      "name": "",
-      "phone": "",
-      "id": "R-8a9KEpE"
-    },
-    {
-      "name": "sadsa",
-      "phone": "asd",
+      "name": "T. Hạ",
+      "phone": "321321321",
       "id": "zy8P8PdO1"
-    },
-    {
-      "name": "",
-      "phone": "",
-      "id": "4A2MheTjK"
-    },
-    {
-      "name": "",
-      "phone": "",
-      "id": "pHvDYi7wd"
-    },
-    {
-      "name": "HEHEHE",
-      "phone": "sasads",
-      "id": "WDaPq1bUG"
     }
   ]
 }

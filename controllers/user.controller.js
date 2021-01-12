@@ -19,6 +19,7 @@ module.exports.search = function(req, res){
 }
 
 module.exports.create = function(req, res){
+    console.log(req.cookies)
     res.render('users/create');
 }
 
@@ -31,7 +32,6 @@ module.exports.Postcreate = function(req, res){
 
 module.exports.view = function(req, res){
     var id = req.params.user_id;
-    console.log(res.locals);
     var user = db.get('users').find({ id: id }).value();
     res.render('users/view',{
         user : user
