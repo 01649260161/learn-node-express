@@ -1,0 +1,18 @@
+extends ../layouts/common.pug
+block content
+    h1
+        span.mr-3 Products 
+        a.btn.btn-primary(href="/products/create") New
+    .d-flex.align-items-center
+        form(action="/products/search",method="GET", class="d-flex", style="margin-left:auto;")
+            input(type="text", name="q", class="form-control")
+            button(class="btn btn-primary") Search
+    .row
+        if(products)
+            each product in products
+                .col-md-4.text-center
+                    .jumbotron.p-2.mt-2(style="background:#ccc;border-radius:5px")
+                        img.img-thumbnail(src= product.image)
+                        h5(style="text-align:left;")= product.name
+                        p= product.description
+                        a.btn.btn-primary(href="/cart/add/" + product.id) Add to cart

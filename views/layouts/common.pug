@@ -10,6 +10,9 @@ html
                 .navbar-nav
                 a.nav-item.nav-link(href='/') Home
                 a.nav-item.nav-link(href='/users') Users
+                a.nav-item.nav-link(href='/products') Products
+                a.nav-item.nav-link(href='/cart') Cart
+                    span.badge(style="background:#e27c7c;")= cart
             if user
                 p= user.name
         .container.pt-5
