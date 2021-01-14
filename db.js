@@ -5,7 +5,11 @@ var adapter = new FileSync('db.json')
 
 var db = low(adapter)
 // Set some defaults
-db.defaults({ users: [], sessions: [] })
+db.defaults({ 
+  users: [], 
+  sessions: [],
+  transfers: [] 
+})
   .write()
 
 

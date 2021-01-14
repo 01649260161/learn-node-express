@@ -12,23 +12,22 @@ module.exports = function(req, res, next){
         db.get('sessions').push({
             id: sessionId
         }).write()
-    }else{
-        // var tong = 0;
-        // var cart = db.get('sessions')
-        // .find({ id: req.signedCookies.sessionId })
-        // .get('cart')
-        // .value();
-    
-        // if(cart){
-        //     for(var i of Object.entries(cart)){
-        //         if(i[1]){
-        //             tong += i[1];
-        //         }
-        //     }
-        // }
-    
-        // res.locals.cart = tong;
-    
-        next();
     }
+    var tong = 0;
+    var cart = db.get('sessions')
+    .find({ id: req.signedCookies.sessionId })
+    .get('cart')
+    .value();
+
+    if(cart){
+        for(var i of Object.entries(cart)){
+            if(i[1]){
+                tong += i[1];
+            }
+        }
+    }
+
+    res.locals.cart = tong;
+
+    next();
 }
