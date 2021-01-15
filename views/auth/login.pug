@@ -6,6 +6,7 @@ block content
         each error in errors
             .alert.alert-danger= error
     form(action="/auth/login", method="POST")
+        input(type="hidden", name="_csrf", value= csrfToken)
         .form-group
             label(for="email") email
             input#email(type="email", value=values?values.email:"", name="email", class="form-control")
